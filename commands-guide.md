@@ -34,7 +34,6 @@ git commit -m "commit message here"
 git push
 
 ### On a Local Branch Directly to dev (or another branch on github)
-- *pushes changes on local branch directly into dev*
 git push origin dev
 
 # Pull 
