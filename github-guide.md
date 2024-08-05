@@ -50,7 +50,7 @@ Once you are in the branch you want to set as upstream, you can type into termin
 To make sure this worked, you can type "git branch -vv" and it will show you the status of each branch - it should say [origin/dev] if it is upstream
 This means you can now type commands like "git push" and "git pull" directly from your branch without having to specify anything else
 
-I don't think you always need to make your small branches upstream if you don't plan on having a version on the github repo to work on over time, I should check back on that I honestly can't remember. Generally its safe to do so, and don't work on other peoples' small branches.
+This should be done if you want your branch to have a version on github that you push updates to, though for a small branch you may not want to do this and will probably just merge it directly into a larger branch that exists on github
 
 # Push and Pull
 In order to make changes or update your local repo, you can push and pull
@@ -91,7 +91,9 @@ Though anything is possible, its generally best to treat this as an action that 
 Speaking from experience - both from myself making this mistake and others - its an absolute headache to try and undo this kind of thing
 
 If your branch is not set as upstream, and the branch exists on both your local machine and the online repo, you will have to type "git push origin <branch name>"
-For this project its probably best to just set the branch you are working on as upstream
+For this project its probably best to just set a larger branch you are working on as upstream
+If you are on a branch that is not upstream - so not on github - and you want to merge it into a branch that is upstream/on github, you can go to the smaller branch (the non upstream one) and use the command "git push origin dev" while on your small branch (if dev is the upstream branch) and that will just push that branch directly into dev in this example
+
 
 ## Pull
 Pull is the opposite of push. 
