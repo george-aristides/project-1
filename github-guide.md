@@ -122,5 +122,14 @@ This will merge your "new-feature" branch into the branch you are on, which in t
 
 Do not merge anything directly into main. The reason dev exists and pull requests are there are to have a system with enough checks to make sure anything going to main is okayed and looked over by someone else 
 
+# Undoing Things
 
+I will probably update this soon with instructions on undoing changes, though generally you don't want to
+This system is standard and is designed to make sure you go through lots of checks and has lots of safety nets to make sure we don't have to undo anything.
+The idea is to be thorough and go forward and do everything possible to avoid going backward. 
+
+Mistakes happen, we may have to try to undo things, but please make sure to follow protocol when working on a group repo. It is a major pain to try and undo things once they are done. 
+For example if you push something through to the main branch that should not be there, lets say it breaks everything and slips through the safety checks, and no one catches it, then we are all going to be pushing, pulling, and working on the version of the repo that does not work. While this is most likely going to be fixable, its not ideal to let this situation happen. 
+
+Now that I stressed this I'm sure I'll be the one to somehow break everything.
 
