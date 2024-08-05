@@ -5,10 +5,10 @@ git clone <link>
 git status
 
 # Create Branch
-git checkout -b <branch-name>
+git checkout -b branch-name
 
 # Switch Branch
-git checkout <branch-name>
+git checkout branch-name
 
 # Set Branch as Upstream
 git branch --set-upstream-to=origin/branch-name
@@ -20,7 +20,7 @@ git branch -vv
 ## Add Files to Staging
 
 ### Individual Files
-git add <file1> <file2>
+git add file1 file2
 
 ### All Changes
 git add .
@@ -45,7 +45,7 @@ git pull
 git pull origin dev
 
 # Delete Local Branch
-git branch -d <branch-name>
+git branch -d branch-name
 
 
 
