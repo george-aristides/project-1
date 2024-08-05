@@ -50,6 +50,8 @@ Once you are in the branch you want to set as upstream, you can type into termin
 To make sure this worked, you can type "git branch -vv" and it will show you the status of each branch - it should say [origin/dev] if it is upstream
 This means you can now type commands like "git push" and "git pull" directly from your branch without having to specify anything else
 
+I don't think you always need to make your small branches upstream if you don't plan on having a version on the github repo to work on over time, I should check back on that I honestly can't remember. Generally its safe to do so, and don't work on other peoples' small branches.
+
 # Push and Pull
 In order to make changes or update your local repo, you can push and pull
 If you make changes - lets say you create a new file on the dev branch on your local machine and edit another existing file locally (since every change you make on your computer will be local)
