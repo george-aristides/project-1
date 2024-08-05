@@ -4,6 +4,8 @@ I know this is a lot of stuff you already know how to do, but to be thorough I a
 If you have questions or are confused about anything related to the github process PLEASE make sure to refer to this, look it up, or better yet ask someone for help! 
 Making mistakes with this can sometimes cause really annoying problems for yourself or other collaborators, which is something I have done to myself on solo projects, and fixing them can be a pain.
 
+I have worked on projects/teams with a lot going on so I am doing my best to use what I learned from those experiences in this guide. If you notice any mistakes or have suggestions or anything else please let me know. I am doing this from memory plus I may just be wrong sometimes so feedback is appreciated.
+
 To do work on this, start by cloning the repository.
 Open terminal and go to the place you want to store your local copy of the repo
 For me, I like to keep them on my desktop, so I will type "cd/Desktop" to go there
@@ -15,7 +17,7 @@ If you use ssh you will have to enter your ssh password, if you don't know what 
 Now that you have cloned the repository successfully, make sure you open it in your terminal with "cd/project-1" - assuming you are already in the place it is stored
 In my case, since I keep them on my desktop I need to go to "cd/Desktop/project-1" every time I open a new terminal session
 
-# Branches:
+# Branches
 I have created a second branch, called "dev" - which means development. This branch is separate from "main" and it is best to keep it this way.
 The reason for this is so we can put things that we know are functional and finalized into main and have a second branch to work on with things that are not ready to be incorporated into the main branch
 This is good because we can prevent things like mistakes or conflicting changes/files from being pushed into the main code.
@@ -49,6 +51,7 @@ In order to make changes or update your local repo, you can push and pull
 If you make changes - lets say you create a new file on the dev branch on your local machine and edit another existing file locally (since every change you make on your computer will be local)
 this is how you can handle moving those changes to the online repo
 
+## Push
 the first thing you can do - and especially in the beginning its really good to do this between EVERY step to get a feel for whats happening and make sure you don't make silly mistakes - is type "git status"
 This will show you any differences between your local repo and the one on github, so you will see what files have been created, deleted, or altered
 
@@ -84,3 +87,21 @@ Speaking from experience - both from myself making this mistake and others - its
 If your branch is not set as upstream, and the branch exists on both your local machine and the online repo, you will have to type "git push origin <branch name>"
 For this project its probably best to just set the branch you are working on as upstream
 
+## Pull
+Pull is the opposite of push. 
+Pulling will update your local repo to look like the main repo; if someone else pushes a change to github, your local version will now be outdated and be behind the github online version. 
+In order to make sure your version is up to date, you need to pull down the latest version to your machine.
+
+This should be just like the git push command - "git pull" will pull down the latest version of whatever branch you are on.
+If your branch is not set as upstream then you will need to do "git pull origin dev" to do this
+
+## Communicating on pushes and pulls
+
+To avoid conflicts that may and will arise in some capacity, please make sure to do lots of regular small pushes and pulls.
+Its good to check the repo for changes and pull every time you start working, to make sure that before you start you have the latest version.
+Likewise when you make a small change, or a few small changes its good to push it before you do too much else. This makes it so its easy to identify where issues come from and makes it so you can keep your commit messages concise and still descibe what the changes are. 
+
+Github does a pretty good job of automatically warning you about problems and preventing disasters, so mistakes are likely not going to ruin everything, but keeping a protocol in the process will make things much smoother.
+
+# Pull Requests
+The way we move changes 
