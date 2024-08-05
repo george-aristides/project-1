@@ -1,7 +1,9 @@
 # Please read before working - github version control for this project
 
 I know this is a lot of stuff you already know how to do, but to be thorough I am going to document every step 
+
 If you have questions or are confused about anything related to the github process PLEASE make sure to refer to this, look it up, or better yet ask someone for help! 
+
 Making mistakes with this can sometimes cause really annoying problems for yourself or other collaborators, which is something I have done to myself on solo projects, and fixing them can be a pain.
 
 I have worked on projects/teams with a lot going on so I am doing my best to use what I learned from those experiences in this guide. If you notice any mistakes or have suggestions or anything else please let me know. I am doing this from memory plus I may just be wrong sometimes so feedback is appreciated.
@@ -121,6 +123,16 @@ Then you can type "git merge new-feature"
 This will merge your "new-feature" branch into the branch you are on, which in this example is "dev"
 
 Do not merge anything directly into main. The reason dev exists and pull requests are there are to have a system with enough checks to make sure anything going to main is okayed and looked over by someone else 
+
+## Deleting branches
+
+When you merge a branch on github, the option to automatically delete that branch may appear. 
+This will happen if everything on that branch will then also be on a another bigger branch like dev -
+So if you create a branch for a specific purpose like adding a feature, you go through all the steps and merge that branch from your terminal or create a pull request on github and that all goes through, you will be left a branch that has less stuff than dev, but everything on it is also on dev. So bascially two copies of the same thing. Github will ask you if you want to delete this branch, and this is usually a good idea if you are done using the branch for its intended purpose. 
+
+If you delete the branch on github, you will also have to delete it separately on your local repo. To do this just type "git branch -d <branch-name>" to delete it on your machine. 
+
+If you go read the commit log and look back you will see I merged and deleted dev while testing stuff out with this. I probably should not have done that because I am about to say don't do that, but hindsight is 20/20. Don't delete dev while merging to main if we decided to do so at some point. This should not be anything we worry about, just thought I should throw it out there because I did it and it may be possible that someone is prompted with that choice.
 
 # Undoing Things
 
