@@ -19,9 +19,9 @@ In my case, since I keep them on my desktop I need to go to "cd/Desktop/project-
 
 # Branches
 I have created a second branch, called "dev" - which means development. This branch is separate from "main" and it is best to keep it this way.
-The reason for this is so we can put things that we know are functional and finalized into main and have a second branch to work on with things that are not ready to be incorporated into the main branch
+The reason for this is so we can put things that we think are functional and finalized into dev and have that be a second branch to work on with things that are not ready to be incorporated into the main branch
 This is good because we can prevent things like mistakes or conflicting changes/files from being pushed into the main code.
-Basically, if we are all just pushing everything into the main branch, we could overlap, overwrite, or put things that don't work properly in and it would make it difficult to work together
+Basically, if we are all just pushing everything into the main branch, we could overlap, overwrite, or put things that don't work properly in and it would make it difficult to work together and recovering the older version becomes more difficult than it needs to be
 It is like all of us trying to type the same essay on the same document at the same time in a google doc, it gets messy, you write in the middle of or over other peoples stuff, delete the wrong thing... you get the picture
 
 We may decide to change how we do our branch system, but this way is pretty standard so I set it up this way initially
@@ -33,7 +33,9 @@ If you want to know what branch you are on at any point, type "git status" and i
 *please do not create a new branch called dev or main, or with the same name as any other existing branch* 
 To create a new branch, type "git checkout -b <new branch name>"
 This command will create a new branch locally (meaning on your device only) and switch to it. You will then have to commit those changes (creating a new branch is a change) to the online repository for other people to see your branch
-Depends on what we decide to do, but generally don't just create branches for no reason. It makes things messy, and always communicate if you do want to do this
+Depends on what we decide to do, but generally don't just create branches for no reason. It makes things messy.
+You will want to create a new branch for each change you plan on making, I think we can/will discuss this in greater detail.
+
 
 # Upstream
 So far we have cloned the repository to your local machine and switched to the dev branch
@@ -104,4 +106,21 @@ Likewise when you make a small change, or a few small changes its good to push i
 Github does a pretty good job of automatically warning you about problems and preventing disasters, so mistakes are likely not going to ruin everything, but keeping a protocol in the process will make things much smoother.
 
 # Pull Requests
-The way we move changes 
+The way we move changes from one branch to another - typically this will be happening when moving things from dev to main.
+This is something that is done on the github page and is a way for other people to check and approve your changes before they go through.
+This is standard and a good thing since its basically a built in peer review step in github and prevents people from putting things straight into main on their own
+
+# Merging Branches
+This is how most smaller changes will be moved into a larger branch like dev
+Usually you will create your own branch dedicated to the change you are making/thing you are working on in order to avoid conflicting changes
+You can make small changes to your own branch little by little, try not to do too many things at once, and when you are ready to put those changes through its good to push them through to the github repo on your own branch, and then merge that branch into dev. 
+
+To do this - lets say you created a branch called "new-feature" which you used to create a new feature for the code
+First you make sure you are on that branch and type "git checkout dev" to switch to dev, if this is the place you want to merge to 
+Then you can type "git merge new-feature" 
+This will merge your "new-feature" branch into the branch you are on, which in this example is "dev"
+
+Do not merge anything directly into main. The reason dev exists and pull requests are there are to have a system with enough checks to make sure anything going to main is okayed and looked over by someone else 
+
+
+
