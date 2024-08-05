@@ -45,6 +45,8 @@ So far we have cloned the repository to your local machine and switched to the d
 When you clone the repository, you pull down the existing code, but the default branch for changes is "main"
 In order to set up other branches to be "upstream" - which means that you can push changes within that branch up the online repo - you need establish on your device that it is an upstream branch
 
+I don't think you'll have to do this for sure, but its likely you will at least encounter this concept while working on this so its good to somewhat understand whats going on so you can figure out how you want to work around the issue if it arises.
+
 To do this make you are in the right branch, so you can go "git status" to see. If you are not in the right branch (which for now is "dev") you can to "git checkout dev" to switch to it
 Once you are in the branch you want to set as upstream, you can type into terminal "git branch --set-upstream-to=origin/dev" and replace dev with the other branch name if needed 
 To make sure this worked, you can type "git branch -vv" and it will show you the status of each branch - it should say [origin/dev] if it is upstream
