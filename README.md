@@ -1,6 +1,6 @@
 # project-1
 
-<img src= airline_cover.png width="400">
+<img src= airline_cover.jpg width="400">
 
 
 # Airline Routes - Season
