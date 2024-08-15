@@ -47,7 +47,7 @@ To run this project locally:
    git clone https://github.com/george-aristides/project-1.git
    cd project-1
    
-2. **Run in Juputer Notebook:**
+2. **Run in Jupyter Notebook:**
    jupyter notebook Airline.ipynb
    
 3. **Necessary Installs**
