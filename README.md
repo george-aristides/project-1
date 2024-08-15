@@ -1,6 +1,6 @@
 # project-1
 
-<img src= airline_cover.jpg width="400">
+<img src= airline_cover.jpg width="800">
 
 
 # Airline Routes - Season
@@ -71,7 +71,7 @@ After the dataset it loaded it is broken into 4 sections:
 
 ## Visualization
 
-<img src= city_popularity_over_time.png width="400">
+<img src= city_popularity_over_time.png width="800">
 
 Visualization of the top 10 most popular citites over 5 year intervals starting from 1990 to 2020
 
