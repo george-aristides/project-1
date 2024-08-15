@@ -48,7 +48,7 @@ To run this project locally:
    cd project-1
    
 2. **Run in Jupyter Notebook:**
-   ```python
+
    jupyter notebook Airline.ipynb
    
 4. **Necessary Installs**
